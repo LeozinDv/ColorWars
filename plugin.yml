@@ -1,0 +1,7 @@
+name: F_ColorWars
+main: me.devleo.colorwars.Main
+version: 1.0BETA
+author: LeoDevi
+
+commands:
+   cw:

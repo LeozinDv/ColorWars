@@ -1,0 +1,71 @@
+Configuracao:
+   Prefix: '&6[ColorWars]'
+   Total_de_Chamadas: 5
+   Tempo_Entre_Chamadas: 10
+   Minimo_Jogadores: 2
+   Bloquear_Comandos: true
+   # Quando ativa, essa opçao mostra quem entrou/saiu do evento para os outros participantes
+   Ativar_MSG_JoineLeave: true
+   Usar_Action_Bar: true
+
+AutoStart:
+   Ativo: true
+   # Domingo - Segunda - Terca - Quarta - Quinta - Sexta - Sabado
+   Dia: 'quarta'
+   Horario: '11:11'
+
+Premio:
+   Ganhar_Tag: true
+   Ganhar_Money: true
+   Tag: '&7[&9KingOfColors&7]'
+   Quantia_Money: 25000
+
+Mensagens_Privadas:
+   JaAcontecendo: '@prefix &cO evento ja esta acontecendo!'
+   NaoAcontecendo: '@prefix &cO evento nao esta acontecendo!'
+   JaIniciado: '@prefix &cO evento ja comecou!'
+   JaParticipando: '@prefix &cVoce ja esta participando do evento!'
+   NaoParticipando: '@prefix &cVoce nao esta participando do evento!'
+   EsvazieInv: '@prefix &cEsvazie seu inventario para participar do evento!'
+   Entrou: '&2[Evento] &a@jogador entrou no evento&7(@participando)&a!'
+   Saiu: '&2[Evento] &a@jogador saiu do evento&7(@participando)&a!'
+   PvPOff: '&4[Evento] &cO PvP ainda nao esta ativo!'
+   PvPOn: '&4[Evento] &cO PvP foi ativado!'
+   Camarote: '@prefix &eTeleportado ao Camarote do evento!'
+   Comandos: '@prefix &cComandos bloqueados durante o evento!'
+
+#Variaveis:
+# @prefix = Prefixo das mensagens
+# @chamadas = Numero de chamadas restantes
+# @tagpremio = TAG de premiacao
+# @moneypremio = Quantia em dinheiro de premiacao
+# @participando = Numero de jogadores participando
+# @vencedor = Nome do vencedor do evento
+# @staff = Nome do staff
+Evento_Comecando:
+- '&6[Evento] &eIniciando evento &7ColorWars&e.'
+- '&6[Evento] &eChamadas restantes: &c@chamadas'
+- '&6[Evento] &ePara participar use: &7/cw participar'
+- '&6[Evento] &4&lPvP &eativado neste evento!'
+- '&6[Evento] &ePremios: @tagpremio + &2$&7@moneypremio'
+- '&6[Evento] &eJogadores participando: &7@participando'
+
+Evento_Cancelado_Falta_Jogadores:
+- '&6[Evento] &eEvento cancelado.'
+- '&6[Evento] &eMotivo: &7Falta de jogadores!'
+
+Evento_Cancelado_Staff:
+- '&6[Evento] &eEvento cancelado pelo staff &7@staff&e!'
+
+Entrada_Trancada:
+- '&6[Evento] &eEvento &7ColorWars &einiciado!'
+- '&6[Evento] &ePremios: @tagpremio + &2$&7@moneypremio'
+- '&6[Evento] &eJogadores participando: &7@participando'
+- '&6[Evento] &eBoa sorte a todos!'
+
+Vencedor:
+- '&6[Evento] &eEvento &7ColorWars &eencerrado!'
+- '&6[Evento] &ePremios: @tagpremio + &2$&7@moneypremio'
+- '&6[Evento] &eVencedor: &7@vencedor'
+
+Owner: 'Ninguem'
